@@ -1,0 +1,1328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A71687A842B92E9BB29256 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFF568EAADC9CDD06DD8EF /* RootTabView.swift */; };
+		05FCA153FF6504EBB0F6F1D3 /* SelectedDayDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435AF588AF0C2A44E14DE14 /* SelectedDayDetailCard.swift */; };
+		0B01650BD19838E834510446 /* TimerPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B516111C4A389E2AF0217 /* TimerPrimaryButton.swift */; };
+		0B06769FE45E49D4F15F7C27 /* HomeVisualTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0936B14CFE34C44FB1918CB /* HomeVisualTokens.swift */; };
+		0B9F655E5FD140CEFCEDE03B /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A525BC660268BA92B51B38 /* TimerViewModel.swift */; };
+		0E4820E0241DF1CFAD464AA5 /* ONBOARDING_AUTOMATION_DOCS.md in Resources */ = {isa = PBXBuildFile; fileRef = 7033F45F71237A65688EE290 /* ONBOARDING_AUTOMATION_DOCS.md */; };
+		10B333A70F7E1C8FDAC1D284 /* TRAYS_QA_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = 1972F83BE81A2B4D190B8F07 /* TRAYS_QA_CHECKLIST.md */; };
+		15D3275EF97EE18F98B68A51 /* TrackerCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53948E49B3907292F0074429 /* TrackerCalculatorTests.swift */; };
+		17FB77E0D1B8F0C7281B21A0 /* SessionHistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1242A5DC590CC3FDDF4A71AB /* SessionHistoryCard.swift */; };
+		19B43D61DE2B0217D9C5CF50 /* TimerVisualTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC876AEF0EAE2A7B9D94559 /* TimerVisualTokens.swift */; };
+		1B08D3CBB6D8A2FA068E81F1 /* AlignerLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5E488245F0C54FF7240BC /* AlignerLiveActivityAttributes.swift */; };
+		1BA8F5E13B74565169C62D42 /* Tray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF7F9BC99371546AA78A869 /* Tray.swift */; };
+		1EE9A158D7A6B8EB53A2F91C /* WatchAppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E54A8C69EFDB2444AFD76A /* WatchAppStates.swift */; };
+		209378ADC44CCB528BB88E39 /* HomeGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AAA898B3B145D54F1A5C51 /* HomeGlassCard.swift */; };
+		25C6C84CACAC48486BEB3529 /* RemovalSessionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD037B061E2C0416C4DAE95 /* RemovalSessionRecord.swift */; };
+		29E69A7C0D4D05A022986DC5 /* SelectedDayDetailCard 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6588AB5ED6B508479A1B5 /* SelectedDayDetailCard 2.swift */; };
+		2A229334D03648116C28FEF1 /* CalendarVisualTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E08AFDB22C055F43F0E28 /* CalendarVisualTokens.swift */; };
+		2B83E92B765CD64BB33064A4 /* TraysVisualTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81606C39B275AEDB9FE4E6 /* TraysVisualTokens.swift */; };
+		307DE4107E9AD57CB4928118 /* ICLOUD_SETUP_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 24311CE236F4EFA9607722B9 /* ICLOUD_SETUP_GUIDE.md */; };
+		33CB648DAD1D2E720DDFA4A6 /* CalendarMonthCard 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CE5080905FE0223B4507A4 /* CalendarMonthCard 2.swift */; };
+		372E022ECC824222F58DBB45 /* TraysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADD10B464562F841E3EF8B /* TraysViewModel.swift */; };
+		3F819B959D42FBCB3127A52A /* GradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D6D2E768C6E5B1F414A27 /* GradientCard.swift */; };
+		40C1DB14C6E4F768D1508FAC /* TIMER_QA_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = A788786FAD4A5EB297B361FE /* TIMER_QA_CHECKLIST.md */; };
+		42742308D9AB7F6FDE3FF02B /* SettingsRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152415A16CCC4896718E5B3 /* SettingsRecord.swift */; };
+		431E8301AB6E270CF4B071C3 /* WATCH_APP_README.md in Resources */ = {isa = PBXBuildFile; fileRef = AFF5D0D06EEDF38BA3387AFC /* WATCH_APP_README.md */; };
+		4330C2EA231BF9938CABD3EE /* QUICK_START_CARD.md in Resources */ = {isa = PBXBuildFile; fileRef = 80005F241CF0BB9530D18B6F /* QUICK_START_CARD.md */; };
+		4977D5606A498B4B50830D37 /* ASSETS_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = A3B74E952188E694BBEBB361 /* ASSETS_GUIDE.md */; };
+		4B0FB1A6FD02861D93F6E735 /* ActivityRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89527711344182AEB74B2D /* ActivityRing.swift */; };
+		4E7C6C0A1F646776BB38584F /* TraysView+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D1F9CC00B461234818664 /* TraysView+Previews.swift */; };
+		4EDE1E500E32B119B527775B /* InvisalignTrackerWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9B0024796003517CC73787D9 /* InvisalignTrackerWatchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F1A9360646A988D88F0D626 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F610A4AD61EB4B5E738481 /* AppContext.swift */; };
+		4F3C0BD7079EADE7E3258FEF /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69F863A5FB25CB10FABC37 /* AppTheme.swift */; };
+		5017A5E363BF97C7FFDDAFDE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D58515F4A488CEAD72A4EE /* CalendarView.swift */; };
+		52E8F8AC977BB9A5CBA85289 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA814FD940AF51D99FDDCE /* CalendarDayCell.swift */; };
+		53443F38E178B65C97DD7AA2 /* TrayMetricRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C6DA5C51E7832DAB08061B /* TrayMetricRow.swift */; };
+		539F144B36A3C4431016FBFD /* CalendarVisualTokens 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228B144A48D1DC2A5389DC6 /* CalendarVisualTokens 2.swift */; };
+		54FDB23144799384DF12055F /* InvisalignTrackerWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007524721BFA8D3103D34D06 /* InvisalignTrackerWatchApp.swift */; };
+		55EFBEDB1C03537BB9A5EB42 /* DayStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77337ACCFE9C628AB6C33E1 /* DayStatus.swift */; };
+		580C4B3F06A270A80F02100A /* BottomActionDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F363A895932D0BCA32A20D /* BottomActionDock.swift */; };
+		5F4F6A04075CC8FC7CFF4157 /* WatchStatePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F001CFD94C72DBAC7385370 /* WatchStatePayload.swift */; };
+		6267FD048020BCB04571BFC5 /* AlignerLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF94A986346062DD9AA1A5 /* AlignerLiveActivityWidget.swift */; };
+		644353DB5591611F1CC9F469 /* CloudSyncMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AA29DE35EBCE3F9CE48B3 /* CloudSyncMonitor.swift */; };
+		66CC19D178F03E3F0E03E479 /* AlignerLiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F532102B8DC8449FA1A8F3 /* AlignerLiveActivityManager.swift */; };
+		6F2C7CE3C7219BDBC07FEFE0 /* CALENDAR_DEBUG_FIX.md in Resources */ = {isa = PBXBuildFile; fileRef = 99501A3AE987CA53CE012587 /* CALENDAR_DEBUG_FIX.md */; };
+		6FE2BE6146E4EE50328656B9 /* AlignerLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5E488245F0C54FF7240BC /* AlignerLiveActivityAttributes.swift */; };
+		70956A30D9319DC6939595C7 /* PrimaryToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE91E85BA39EB823B370C55 /* PrimaryToggleButton.swift */; };
+		72BF4E3D32F8B54B09EBA44C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F90F0466E888C5D824AFEB1 /* TimerView.swift */; };
+		73FFFBB8BA0A88924CA6EFA9 /* ComplianceMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE8A101C1F30D5B8381604 /* ComplianceMode.swift */; };
+		743B02A13C4BA37BB0665D99 /* NotificationTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E685F60E5A825D423970359 /* NotificationTimeHelper.swift */; };
+		7603992236D5FB83726B1938 /* WeekStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA54741C40779A53C680B27 /* WeekStripView.swift */; };
+		7BD334BEF1DC97571D9D1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695C241EDB7FC170AB9DCFAD /* Assets.xcassets */; };
+		7C725B3175DE5420EA6E1B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACF5CB19E273DD6DF32115 /* Assets.xcassets */; };
+		7DEA08C1B280BD1799DD8C2B /* IMPLEMENTATION_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 237243845019D315D596E9F4 /* IMPLEMENTATION_SUMMARY.md */; };
+		82EC1945107B8D866106A483 /* WatchTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F147526117FF9BB039AD339 /* WatchTheme.swift */; };
+		881CF80644EB9E07B3F84100 /* CALENDAR_QA_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = D5EB4883198F2142C69F9FC9 /* CALENDAR_QA_CHECKLIST.md */; };
+		8C70F8DF146CE211211AA33A /* TrayProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EA4BDD9CA461BD83D35D3 /* TrayProgressBar.swift */; };
+		90334E540984B96687B0B046 /* RemovalSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0524BE22B303C583FD556 /* RemovalSession.swift */; };
+		91B9BDCB3D098B0FE81B187A /* CALENDAR_FIX_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 646BEFA756D3BD1074771D55 /* CALENDAR_FIX_SUMMARY.md */; };
+		91BBFD7C723906B3EBB3876E /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA354342BB037C8DF2BAFDBD /* GlassCard.swift */; };
+		942F02B3328CED5FEBA12E17 /* ReminderNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7277BE2D55357D6123FE91F5 /* ReminderNotificationManager.swift */; };
+		946C69D08669E69C64C04F08 /* WatchConnectivityManager_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091AC3F047308D541F1B7B4 /* WatchConnectivityManager_iOS.swift */; };
+		963494B056426C3F691B7CE2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B853560A9565669E45E7C2 /* Formatters.swift */; };
+		98DA14533B8C277660B2286D /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D434A512A3B7C3621075C /* TodayViewModel.swift */; };
+		99ED79D6CECB488BCE27EBE3 /* WidgetDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081BF0D6388B3C96A24A935C /* WidgetDataStore.swift */; };
+		9A5371AF1987C25A22891D2E /* TraysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DFACC10DDAE73990568115 /* TraysView.swift */; };
+		9C826F23E06B0B5B4F4A9209 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FE4F89015F995F6226036 /* WatchConnectivityManager.swift */; };
+		A1F4D0CF3057E2410AFF23E3 /* iOS_Integration_Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C073697F961ABC21CF4C38 /* iOS_Integration_Instructions.swift */; };
+		A287153E4E19FC6CDED1CDE8 /* TimerHeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE50E1157712D8AD04B5923 /* TimerHeroCard.swift */; };
+		A2AAC81887777EF1D6CBD069 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E36CE09B892E242FAA98DE /* TodayView.swift */; };
+		A529A9070471B52045892309 /* TrayActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88113C76F03DC455BFAF97 /* TrayActionButton.swift */; };
+		A97FB36F399B54DE2B16F96C /* RingClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C5AFCCBC4EB8097171903B /* RingClusterView.swift */; };
+		AA4630A0C9F48037CC5929DF /* DEPLOYMENT_CHECKLIST.md in Resources */ = {isa = PBXBuildFile; fileRef = 34399F8B267CACA9FCBD41E7 /* DEPLOYMENT_CHECKLIST.md */; };
+		AF8C0DFCE4F5CBB15197EC82 /* CalendarMonthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD965616F67CC421ACEF24EF /* CalendarMonthCard.swift */; };
+		B28F149431A6A90E38F19182 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69F863A5FB25CB10FABC37 /* AppTheme.swift */; };
+		B2F5E4508C929A316DA581DE /* TrayGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679AC82854083BE41D981E3 /* TrayGlassCard.swift */; };
+		B6D49A8839939B115B7FEA38 /* TrayRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C20BFF22F5D3F62D6C3361 /* TrayRecord.swift */; };
+		BE3E7775A54846D8C84ADE1F /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEF760B569E3EA9557FC93 /* DateService.swift */; };
+		BE5A4D7A6EEC5D1F04964C42 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B450607B695AFB29194A7 /* SettingsViewModel.swift */; };
+		C01B9F5B5E52EA176A8DEEFF /* InvisalignTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4513D0DFA6F21799C93C6 /* InvisalignTrackerApp.swift */; };
+		C2EA88292F874DA0A45B4CFC /* SwiftDataTrackingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CB01211E87E28E5AF21BB /* SwiftDataTrackingRepository.swift */; };
+		C34A28AECDFC154AA010E62F /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44E866D6CDB8D9B045E55C5 /* CalendarViewModel.swift */; };
+		C4B46CD7ED234E8DDFB2248E /* AlignerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394EA9634941FF69C9A36D6E /* AlignerWidget.swift */; };
+		CAC704337B4FF25EF17B8AD6 /* TraysComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305991B56CC1EEC5F17D962A /* TraysComponents.swift */; };
+		CBB83A41F5F8749C41ED408D /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591CD1BEE503A3EE20A8D63 /* ProgressRingView.swift */; };
+		CC0ECD229560D6AE002B2F59 /* InvisalignTrackerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 35368F41C1898556673CBD36 /* InvisalignTrackerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD48156D768819AA93241036 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D7B15988E5A1B1A135A36 /* OnboardingView.swift */; };
+		CE55EF5569B76EECF86FF005 /* TraysEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9C30E1522D8080F18B2C6 /* TraysEmptyState.swift */; };
+		CF5B99210B8704F70E32DDB2 /* TrackerCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54918BEB482B05A8AC25EC91 /* TrackerCalculator.swift */; };
+		CF7F9EAC2CB339B5073E1561 /* AddTrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111D33B06878CD9A353446CA /* AddTrayButton.swift */; };
+		D6D38238C607B285749315CF /* WATCH_SETUP_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 51009F65F704AF5BEE0ADE19 /* WATCH_SETUP_GUIDE.md */; };
+		D83289BCB2E716EDD3C3405E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85468E19FA7CC5422FF5D646 /* SettingsView.swift */; };
+		DD3094D18723A0B6B2B9E482 /* WatchStatePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F001CFD94C72DBAC7385370 /* WatchStatePayload.swift */; };
+		E155131D06C3286E488BFE35 /* TrackingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5F4B8F66388333E7BC7EBF /* TrackingStore.swift */; };
+		E174F7EF93F0EDA4ED1B4403 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA23A74FC8A70CDAD4A137 /* ContentView.swift */; };
+		E31946AA6D162312AD3E9DAF /* CalendarDayCell 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2852A6C0FD40E28E2D96E6 /* CalendarDayCell 2.swift */; };
+		E497E40EF0DBF49E939B767C /* TrayStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D52D4A6E04F3F407E4D2FE /* TrayStatusBadge.swift */; };
+		EFE91EA421F9992CCA48FDF5 /* TrackingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D41A2AC504A7EB39CB1112 /* TrackingRepository.swift */; };
+		F0C981F4087E84E8DF5AA6FB /* KPIStatTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A9D90D241BE442F05301D4 /* KPIStatTile.swift */; };
+		F23EEDE7F4E3A2EF3B4269B0 /* REMINDER_NOTIFICATIONS_FEATURE.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2AC63946DB6AA0B46CC27D /* REMINDER_NOTIFICATIONS_FEATURE.md */; };
+		F41695CCD72D49E754275DD1 /* StatusPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E69C8252B53F143DA3EA69A /* StatusPill.swift */; };
+		F72F0D29A6047BB4BBE6BBC3 /* TrackerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90142F0633CD93D9426BC7 /* TrackerSettings.swift */; };
+		F81D49EAF324ECE08EED7C2E /* SettingsComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F0839D9359B777775CF91 /* SettingsComponents.swift */; };
+		FA29727CEDCF57AAEA10C314 /* InvisalignTrackerLiveActivities.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75E7D7F9418E7F04A7AE0E1F /* InvisalignTrackerLiveActivities.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE3262752ECDB23E7CB74F57 /* build_output.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6A5B6FD728487907FD93C94 /* build_output.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0914C629C8F95D512CA6066F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BE5D5D3DC63652D7E92D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2725514D222818998F06ABF0;
+			remoteInfo = InvisalignTrackerLiveActivities;
+		};
+		43522FC2FF86E8C5F368ED94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BE5D5D3DC63652D7E92D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE88223BAEC4AD59C4657E8;
+			remoteInfo = InvisalignTracker;
+		};
+		69AAB1D2CCF1B6A85B976700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BE5D5D3DC63652D7E92D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F41F50DA1D4D4ECA298DC59;
+			remoteInfo = InvisalignTrackerWatch;
+		};
+		6AF42B35505668F499B580E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4BE5D5D3DC63652D7E92D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22503A538168B652D6731C8C;
+			remoteInfo = InvisalignTrackerWatchWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04F006DA2A062355CD24200B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA29727CEDCF57AAEA10C314 /* InvisalignTrackerLiveActivities.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F57E0EE6A6282D85DDF2AB7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4EDE1E500E32B119B527775B /* InvisalignTrackerWatchWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7674E0160DE25CAC5CB0C3E7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CC0ECD229560D6AE002B2F59 /* InvisalignTrackerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		007524721BFA8D3103D34D06 /* InvisalignTrackerWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisalignTrackerWatchApp.swift; sourceTree = "<group>"; };
+		007E08AFDB22C055F43F0E28 /* CalendarVisualTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVisualTokens.swift; sourceTree = "<group>"; };
+		02FE8A101C1F30D5B8381604 /* ComplianceMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceMode.swift; sourceTree = "<group>"; };
+		04F363A895932D0BCA32A20D /* BottomActionDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomActionDock.swift; sourceTree = "<group>"; };
+		06DFACC10DDAE73990568115 /* TraysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraysView.swift; sourceTree = "<group>"; };
+		081BF0D6388B3C96A24A935C /* WidgetDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataStore.swift; sourceTree = "<group>"; };
+		111D33B06878CD9A353446CA /* AddTrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrayButton.swift; sourceTree = "<group>"; };
+		11E54A8C69EFDB2444AFD76A /* WatchAppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppStates.swift; sourceTree = "<group>"; };
+		1242A5DC590CC3FDDF4A71AB /* SessionHistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryCard.swift; sourceTree = "<group>"; };
+		1435AF588AF0C2A44E14DE14 /* SelectedDayDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDayDetailCard.swift; sourceTree = "<group>"; };
+		14F532102B8DC8449FA1A8F3 /* AlignerLiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignerLiveActivityManager.swift; sourceTree = "<group>"; };
+		16A9D90D241BE442F05301D4 /* KPIStatTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPIStatTile.swift; sourceTree = "<group>"; };
+		1972F83BE81A2B4D190B8F07 /* TRAYS_QA_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TRAYS_QA_CHECKLIST.md; sourceTree = "<group>"; };
+		1D4D7B15988E5A1B1A135A36 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1D90142F0633CD93D9426BC7 /* TrackerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerSettings.swift; sourceTree = "<group>"; };
+		1F147526117FF9BB039AD339 /* WatchTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTheme.swift; sourceTree = "<group>"; };
+		237243845019D315D596E9F4 /* IMPLEMENTATION_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IMPLEMENTATION_SUMMARY.md; sourceTree = "<group>"; };
+		24311CE236F4EFA9607722B9 /* ICLOUD_SETUP_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ICLOUD_SETUP_GUIDE.md; sourceTree = "<group>"; };
+		248D1F9CC00B461234818664 /* TraysView+Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TraysView+Previews.swift"; sourceTree = "<group>"; };
+		2D2AC63946DB6AA0B46CC27D /* REMINDER_NOTIFICATIONS_FEATURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REMINDER_NOTIFICATIONS_FEATURE.md; sourceTree = "<group>"; };
+		305991B56CC1EEC5F17D962A /* TraysComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraysComponents.swift; sourceTree = "<group>"; };
+		34399F8B267CACA9FCBD41E7 /* DEPLOYMENT_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEPLOYMENT_CHECKLIST.md; sourceTree = "<group>"; };
+		35368F41C1898556673CBD36 /* InvisalignTrackerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvisalignTrackerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D52D4A6E04F3F407E4D2FE /* TrayStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayStatusBadge.swift; sourceTree = "<group>"; };
+		385D434A512A3B7C3621075C /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		394EA9634941FF69C9A36D6E /* AlignerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignerWidget.swift; sourceTree = "<group>"; };
+		3BC876AEF0EAE2A7B9D94559 /* TimerVisualTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVisualTokens.swift; sourceTree = "<group>"; };
+		3E685F60E5A825D423970359 /* NotificationTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTimeHelper.swift; sourceTree = "<group>"; };
+		3FCA23A74FC8A70CDAD4A137 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4591CD1BEE503A3EE20A8D63 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		4EBF94A986346062DD9AA1A5 /* AlignerLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignerLiveActivityWidget.swift; sourceTree = "<group>"; };
+		51009F65F704AF5BEE0ADE19 /* WATCH_SETUP_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WATCH_SETUP_GUIDE.md; sourceTree = "<group>"; };
+		53948E49B3907292F0074429 /* TrackerCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCalculatorTests.swift; sourceTree = "<group>"; };
+		54918BEB482B05A8AC25EC91 /* TrackerCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCalculator.swift; sourceTree = "<group>"; };
+		55B853560A9565669E45E7C2 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		571E64F5B1BEC9DF34770AD6 /* InvisalignTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvisalignTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD037B061E2C0416C4DAE95 /* RemovalSessionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovalSessionRecord.swift; sourceTree = "<group>"; };
+		5E2852A6C0FD40E28E2D96E6 /* CalendarDayCell 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarDayCell 2.swift"; sourceTree = "<group>"; };
+		5E747B5C2401F89C4295300E /* InvisalignTrackerWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvisalignTrackerWatch.entitlements; sourceTree = "<group>"; };
+		5ECEF760B569E3EA9557FC93 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		61D58515F4A488CEAD72A4EE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		646BEFA756D3BD1074771D55 /* CALENDAR_FIX_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CALENDAR_FIX_SUMMARY.md; sourceTree = "<group>"; };
+		678457EF40DE70161AF9F589 /* InvisalignTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvisalignTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C6DA5C51E7832DAB08061B /* TrayMetricRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayMetricRow.swift; sourceTree = "<group>"; };
+		695C241EDB7FC170AB9DCFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69C1E3AC2E50A16AC7DA90C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7033F45F71237A65688EE290 /* ONBOARDING_AUTOMATION_DOCS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ONBOARDING_AUTOMATION_DOCS.md; sourceTree = "<group>"; };
+		7063D2B120E1EB6A7F11A203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71C5AFCCBC4EB8097171903B /* RingClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingClusterView.swift; sourceTree = "<group>"; };
+		7277BE2D55357D6123FE91F5 /* ReminderNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderNotificationManager.swift; sourceTree = "<group>"; };
+		755B450607B695AFB29194A7 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		75E7D7F9418E7F04A7AE0E1F /* InvisalignTrackerLiveActivities.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InvisalignTrackerLiveActivities.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DACF5CB19E273DD6DF32115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F001CFD94C72DBAC7385370 /* WatchStatePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStatePayload.swift; sourceTree = "<group>"; };
+		80005F241CF0BB9530D18B6F /* QUICK_START_CARD.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICK_START_CARD.md; sourceTree = "<group>"; };
+		805B516111C4A389E2AF0217 /* TimerPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPrimaryButton.swift; sourceTree = "<group>"; };
+		85468E19FA7CC5422FF5D646 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		884D6D2E768C6E5B1F414A27 /* GradientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCard.swift; sourceTree = "<group>"; };
+		88CE5080905FE0223B4507A4 /* CalendarMonthCard 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarMonthCard 2.swift"; sourceTree = "<group>"; };
+		8A0F0839D9359B777775CF91 /* SettingsComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsComponents.swift; sourceTree = "<group>"; };
+		8A88113C76F03DC455BFAF97 /* TrayActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayActionButton.swift; sourceTree = "<group>"; };
+		8D6CB01211E87E28E5AF21BB /* SwiftDataTrackingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataTrackingRepository.swift; sourceTree = "<group>"; };
+		8E69C8252B53F143DA3EA69A /* StatusPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPill.swift; sourceTree = "<group>"; };
+		9152415A16CCC4896718E5B3 /* SettingsRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRecord.swift; sourceTree = "<group>"; };
+		91D41A2AC504A7EB39CB1112 /* TrackingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingRepository.swift; sourceTree = "<group>"; };
+		9228B144A48D1DC2A5389DC6 /* CalendarVisualTokens 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarVisualTokens 2.swift"; sourceTree = "<group>"; };
+		958FE4F89015F995F6226036 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		99501A3AE987CA53CE012587 /* CALENDAR_DEBUG_FIX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CALENDAR_DEBUG_FIX.md; sourceTree = "<group>"; };
+		9AAA814FD940AF51D99FDDCE /* CalendarDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
+		9AF7F9BC99371546AA78A869 /* Tray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tray.swift; sourceTree = "<group>"; };
+		9B0024796003517CC73787D9 /* InvisalignTrackerWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InvisalignTrackerWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F90F0466E888C5D824AFEB1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		A1C073697F961ABC21CF4C38 /* iOS_Integration_Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Integration_Instructions.swift; sourceTree = "<group>"; };
+		A3B74E952188E694BBEBB361 /* ASSETS_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ASSETS_GUIDE.md; sourceTree = "<group>"; };
+		A788786FAD4A5EB297B361FE /* TIMER_QA_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TIMER_QA_CHECKLIST.md; sourceTree = "<group>"; };
+		AB81606C39B275AEDB9FE4E6 /* TraysVisualTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraysVisualTokens.swift; sourceTree = "<group>"; };
+		AFF5D0D06EEDF38BA3387AFC /* WATCH_APP_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = WATCH_APP_README.md; sourceTree = "<group>"; };
+		B14A6E5DBE08A0C24CADB688 /* InvisalignTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvisalignTracker.entitlements; sourceTree = "<group>"; };
+		B5A525BC660268BA92B51B38 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		B6A5B6FD728487907FD93C94 /* build_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = build_output.txt; sourceTree = "<group>"; };
+		B8F610A4AD61EB4B5E738481 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		BB5F4B8F66388333E7BC7EBF /* TrackingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingStore.swift; sourceTree = "<group>"; };
+		C15AA29DE35EBCE3F9CE48B3 /* CloudSyncMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncMonitor.swift; sourceTree = "<group>"; };
+		C16AF3180770DB2F4DBAC4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C4B4513D0DFA6F21799C93C6 /* InvisalignTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisalignTrackerApp.swift; sourceTree = "<group>"; };
+		C9C6588AB5ED6B508479A1B5 /* SelectedDayDetailCard 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectedDayDetailCard 2.swift"; sourceTree = "<group>"; };
+		CD965616F67CC421ACEF24EF /* CalendarMonthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthCard.swift; sourceTree = "<group>"; };
+		CDAFF568EAADC9CDD06DD8EF /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		CDE50E1157712D8AD04B5923 /* TimerHeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHeroCard.swift; sourceTree = "<group>"; };
+		CEE91E85BA39EB823B370C55 /* PrimaryToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryToggleButton.swift; sourceTree = "<group>"; };
+		CFA54741C40779A53C680B27 /* WeekStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStripView.swift; sourceTree = "<group>"; };
+		D091AC3F047308D541F1B7B4 /* WatchConnectivityManager_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager_iOS.swift; sourceTree = "<group>"; };
+		D1C0524BE22B303C583FD556 /* RemovalSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovalSession.swift; sourceTree = "<group>"; };
+		D2B9C30E1522D8080F18B2C6 /* TraysEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraysEmptyState.swift; sourceTree = "<group>"; };
+		D44E866D6CDB8D9B045E55C5 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		D5EB4883198F2142C69F9FC9 /* CALENDAR_QA_CHECKLIST.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CALENDAR_QA_CHECKLIST.md; sourceTree = "<group>"; };
+		D6E36CE09B892E242FAA98DE /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		DCE5E488245F0C54FF7240BC /* AlignerLiveActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignerLiveActivityAttributes.swift; sourceTree = "<group>"; };
+		DD0EA4BDD9CA461BD83D35D3 /* TrayProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayProgressBar.swift; sourceTree = "<group>"; };
+		E0936B14CFE34C44FB1918CB /* HomeVisualTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVisualTokens.swift; sourceTree = "<group>"; };
+		E679AC82854083BE41D981E3 /* TrayGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayGlassCard.swift; sourceTree = "<group>"; };
+		E77337ACCFE9C628AB6C33E1 /* DayStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStatus.swift; sourceTree = "<group>"; };
+		E9AAA898B3B145D54F1A5C51 /* HomeGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGlassCard.swift; sourceTree = "<group>"; };
+		EC69F863A5FB25CB10FABC37 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		EE89527711344182AEB74B2D /* ActivityRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRing.swift; sourceTree = "<group>"; };
+		F0ADD10B464562F841E3EF8B /* TraysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraysViewModel.swift; sourceTree = "<group>"; };
+		F0C20BFF22F5D3F62D6C3361 /* TrayRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayRecord.swift; sourceTree = "<group>"; };
+		F8DB8FCBE002AD478E578722 /* InvisalignTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvisalignTracker.entitlements; sourceTree = "<group>"; };
+		FA354342BB037C8DF2BAFDBD /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0494C92E207B049A06129A79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AD037B061E2C0416C4DAE95 /* RemovalSessionRecord.swift */,
+				9152415A16CCC4896718E5B3 /* SettingsRecord.swift */,
+				F0C20BFF22F5D3F62D6C3361 /* TrayRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19F791D599036992C345E3E1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA354342BB037C8DF2BAFDBD /* GlassCard.swift */,
+				884D6D2E768C6E5B1F414A27 /* GradientCard.swift */,
+				4591CD1BEE503A3EE20A8D63 /* ProgressRingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1E739FD38192E3FA26CD4326 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				75E8F29AC3E4CBD77AF5CC73 /* Models */,
+				1E8EB73C7EC58A7378AB753D /* Repositories */,
+				CE22EEFBA996E08988EF0F24 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1E8EB73C7EC58A7378AB753D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				91D41A2AC504A7EB39CB1112 /* TrackingRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1F78D3CA9CDEA5E1046408CD /* InvisalignTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A3B74E952188E694BBEBB361 /* ASSETS_GUIDE.md */,
+				B6A5B6FD728487907FD93C94 /* build_output.txt */,
+				34399F8B267CACA9FCBD41E7 /* DEPLOYMENT_CHECKLIST.md */,
+				237243845019D315D596E9F4 /* IMPLEMENTATION_SUMMARY.md */,
+				7063D2B120E1EB6A7F11A203 /* Info.plist */,
+				A1C073697F961ABC21CF4C38 /* iOS_Integration_Instructions.swift */,
+				3E685F60E5A825D423970359 /* NotificationTimeHelper.swift */,
+				7033F45F71237A65688EE290 /* ONBOARDING_AUTOMATION_DOCS.md */,
+				80005F241CF0BB9530D18B6F /* QUICK_START_CARD.md */,
+				AFF5D0D06EEDF38BA3387AFC /* WATCH_APP_README.md */,
+				51009F65F704AF5BEE0ADE19 /* WATCH_SETUP_GUIDE.md */,
+				D091AC3F047308D541F1B7B4 /* WatchConnectivityManager_iOS.swift */,
+			);
+			name = InvisalignTracker;
+			path = .;
+			sourceTree = "<group>";
+		};
+		20F752DD449B7634F7A32B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571E64F5B1BEC9DF34770AD6 /* InvisalignTracker.app */,
+				75E7D7F9418E7F04A7AE0E1F /* InvisalignTrackerLiveActivities.appex */,
+				678457EF40DE70161AF9F589 /* InvisalignTrackerTests.xctest */,
+				35368F41C1898556673CBD36 /* InvisalignTrackerWatch.app */,
+				9B0024796003517CC73787D9 /* InvisalignTrackerWatchWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39775CFE9229817947D515A0 /* LiveActivitiesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4EBF94A986346062DD9AA1A5 /* AlignerLiveActivityWidget.swift */,
+				69C1E3AC2E50A16AC7DA90C9 /* Info.plist */,
+			);
+			path = LiveActivitiesExtension;
+			sourceTree = "<group>";
+		};
+		42805CD55C9901110ABAC027 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				1D4D7B15988E5A1B1A135A36 /* OnboardingView.swift */,
+				D6E36CE09B892E242FAA98DE /* TodayView.swift */,
+				385D434A512A3B7C3621075C /* TodayViewModel.swift */,
+				DC83EC0AAC92669B6914F192 /* Components */,
+				98AB263B942CFFCB1B7FF788 /* LiveActivities */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		57B78FDB6224E649F709A312 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6B2BBADB3E9AF5FCF1538981 /* Calendar */,
+				AA45F2B14743CAB510E04BD0 /* Settings */,
+				B3D6EC907DE6D418914862C0 /* Timer */,
+				42805CD55C9901110ABAC027 /* Today */,
+				71E87BEFE533BFCBAAB95CA9 /* Trays */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		583EEB269501486011026D26 /* InvisalignTrackerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7DACF5CB19E273DD6DF32115 /* Assets.xcassets */,
+				3FCA23A74FC8A70CDAD4A137 /* ContentView.swift */,
+				C16AF3180770DB2F4DBAC4F7 /* Info.plist */,
+				5E747B5C2401F89C4295300E /* InvisalignTrackerWatch.entitlements */,
+				007524721BFA8D3103D34D06 /* InvisalignTrackerWatchApp.swift */,
+				11E54A8C69EFDB2444AFD76A /* WatchAppStates.swift */,
+				958FE4F89015F995F6226036 /* WatchConnectivityManager.swift */,
+				1F147526117FF9BB039AD339 /* WatchTheme.swift */,
+			);
+			path = InvisalignTrackerWatch;
+			sourceTree = "<group>";
+		};
+		5D45D8763CBB9441731B1AB0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8F610A4AD61EB4B5E738481 /* AppContext.swift */,
+				695C241EDB7FC170AB9DCFAD /* Assets.xcassets */,
+				B14A6E5DBE08A0C24CADB688 /* InvisalignTracker.entitlements */,
+				C4B4513D0DFA6F21799C93C6 /* InvisalignTrackerApp.swift */,
+				CDAFF568EAADC9CDD06DD8EF /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6B2BBADB3E9AF5FCF1538981 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				61D58515F4A488CEAD72A4EE /* CalendarView.swift */,
+				D44E866D6CDB8D9B045E55C5 /* CalendarViewModel.swift */,
+				2D2AC63946DB6AA0B46CC27D /* REMINDER_NOTIFICATIONS_FEATURE.md */,
+				7277BE2D55357D6123FE91F5 /* ReminderNotificationManager.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		7035BFC5771412CC24E1E80E /* InvisalignTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB8FCBE002AD478E578722 /* InvisalignTracker.entitlements */,
+			);
+			path = InvisalignTracker;
+			sourceTree = "<group>";
+		};
+		71E87BEFE533BFCBAAB95CA9 /* Trays */ = {
+			isa = PBXGroup;
+			children = (
+				305991B56CC1EEC5F17D962A /* TraysComponents.swift */,
+				06DFACC10DDAE73990568115 /* TraysView.swift */,
+				F0ADD10B464562F841E3EF8B /* TraysViewModel.swift */,
+			);
+			path = Trays;
+			sourceTree = "<group>";
+		};
+		734F62FE38A22B2CF8F08C46 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53948E49B3907292F0074429 /* TrackerCalculatorTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7442D7012047C344018DF995 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0494C92E207B049A06129A79 /* Models */,
+				E55AA8B410FB6EB19267C938 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		75E8F29AC3E4CBD77AF5CC73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02FE8A101C1F30D5B8381604 /* ComplianceMode.swift */,
+				E77337ACCFE9C628AB6C33E1 /* DayStatus.swift */,
+				D1C0524BE22B303C583FD556 /* RemovalSession.swift */,
+				1D90142F0633CD93D9426BC7 /* TrackerSettings.swift */,
+				9AF7F9BC99371546AA78A869 /* Tray.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F84B6D56E80EA3CB21753FC /* InvisalignTrackerWatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				394EA9634941FF69C9A36D6E /* AlignerWidget.swift */,
+				081BF0D6388B3C96A24A935C /* WidgetDataStore.swift */,
+			);
+			path = InvisalignTrackerWatchWidget;
+			sourceTree = "<group>";
+		};
+		98AB263B942CFFCB1B7FF788 /* LiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				14F532102B8DC8449FA1A8F3 /* AlignerLiveActivityManager.swift */,
+			);
+			path = LiveActivities;
+			sourceTree = "<group>";
+		};
+		AA45F2B14743CAB510E04BD0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C15AA29DE35EBCE3F9CE48B3 /* CloudSyncMonitor.swift */,
+				24311CE236F4EFA9607722B9 /* ICLOUD_SETUP_GUIDE.md */,
+				8A0F0839D9359B777775CF91 /* SettingsComponents.swift */,
+				85468E19FA7CC5422FF5D646 /* SettingsView.swift */,
+				755B450607B695AFB29194A7 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B0DC381A895A964B92A1B738 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EC69F863A5FB25CB10FABC37 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B3D6EC907DE6D418914862C0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				111D33B06878CD9A353446CA /* AddTrayButton.swift */,
+				99501A3AE987CA53CE012587 /* CALENDAR_DEBUG_FIX.md */,
+				646BEFA756D3BD1074771D55 /* CALENDAR_FIX_SUMMARY.md */,
+				D5EB4883198F2142C69F9FC9 /* CALENDAR_QA_CHECKLIST.md */,
+				5E2852A6C0FD40E28E2D96E6 /* CalendarDayCell 2.swift */,
+				9AAA814FD940AF51D99FDDCE /* CalendarDayCell.swift */,
+				88CE5080905FE0223B4507A4 /* CalendarMonthCard 2.swift */,
+				CD965616F67CC421ACEF24EF /* CalendarMonthCard.swift */,
+				9228B144A48D1DC2A5389DC6 /* CalendarVisualTokens 2.swift */,
+				007E08AFDB22C055F43F0E28 /* CalendarVisualTokens.swift */,
+				C9C6588AB5ED6B508479A1B5 /* SelectedDayDetailCard 2.swift */,
+				1435AF588AF0C2A44E14DE14 /* SelectedDayDetailCard.swift */,
+				A788786FAD4A5EB297B361FE /* TIMER_QA_CHECKLIST.md */,
+				9F90F0466E888C5D824AFEB1 /* TimerView.swift */,
+				B5A525BC660268BA92B51B38 /* TimerViewModel.swift */,
+				8A88113C76F03DC455BFAF97 /* TrayActionButton.swift */,
+				E679AC82854083BE41D981E3 /* TrayGlassCard.swift */,
+				67C6DA5C51E7832DAB08061B /* TrayMetricRow.swift */,
+				DD0EA4BDD9CA461BD83D35D3 /* TrayProgressBar.swift */,
+				1972F83BE81A2B4D190B8F07 /* TRAYS_QA_CHECKLIST.md */,
+				D2B9C30E1522D8080F18B2C6 /* TraysEmptyState.swift */,
+				37D52D4A6E04F3F407E4D2FE /* TrayStatusBadge.swift */,
+				248D1F9CC00B461234818664 /* TraysView+Previews.swift */,
+				AB81606C39B275AEDB9FE4E6 /* TraysVisualTokens.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		CD5FEEE4539AB7F0FD759441 = {
+			isa = PBXGroup;
+			children = (
+				7F001CFD94C72DBAC7385370 /* WatchStatePayload.swift */,
+				5D45D8763CBB9441731B1AB0 /* App */,
+				7442D7012047C344018DF995 /* Data */,
+				1E739FD38192E3FA26CD4326 /* Domain */,
+				57B78FDB6224E649F709A312 /* Features */,
+				7035BFC5771412CC24E1E80E /* InvisalignTracker */,
+				1F78D3CA9CDEA5E1046408CD /* InvisalignTracker */,
+				583EEB269501486011026D26 /* InvisalignTrackerWatch */,
+				7F84B6D56E80EA3CB21753FC /* InvisalignTrackerWatchWidget */,
+				39775CFE9229817947D515A0 /* LiveActivitiesExtension */,
+				F83B4D664B166BC0CC6CA18C /* Shared */,
+				734F62FE38A22B2CF8F08C46 /* Tests */,
+				20F752DD449B7634F7A32B47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE22EEFBA996E08988EF0F24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEF760B569E3EA9557FC93 /* DateService.swift */,
+				55B853560A9565669E45E7C2 /* Formatters.swift */,
+				54918BEB482B05A8AC25EC91 /* TrackerCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC83EC0AAC92669B6914F192 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EE89527711344182AEB74B2D /* ActivityRing.swift */,
+				04F363A895932D0BCA32A20D /* BottomActionDock.swift */,
+				E9AAA898B3B145D54F1A5C51 /* HomeGlassCard.swift */,
+				E0936B14CFE34C44FB1918CB /* HomeVisualTokens.swift */,
+				16A9D90D241BE442F05301D4 /* KPIStatTile.swift */,
+				CEE91E85BA39EB823B370C55 /* PrimaryToggleButton.swift */,
+				71C5AFCCBC4EB8097171903B /* RingClusterView.swift */,
+				1242A5DC590CC3FDDF4A71AB /* SessionHistoryCard.swift */,
+				8E69C8252B53F143DA3EA69A /* StatusPill.swift */,
+				CDE50E1157712D8AD04B5923 /* TimerHeroCard.swift */,
+				805B516111C4A389E2AF0217 /* TimerPrimaryButton.swift */,
+				3BC876AEF0EAE2A7B9D94559 /* TimerVisualTokens.swift */,
+				CFA54741C40779A53C680B27 /* WeekStripView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E55AA8B410FB6EB19267C938 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8D6CB01211E87E28E5AF21BB /* SwiftDataTrackingRepository.swift */,
+				BB5F4B8F66388333E7BC7EBF /* TrackingStore.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F2BA1529632CF0B05E335E94 /* LiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				DCE5E488245F0C54FF7240BC /* AlignerLiveActivityAttributes.swift */,
+			);
+			path = LiveActivities;
+			sourceTree = "<group>";
+		};
+		F83B4D664B166BC0CC6CA18C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				19F791D599036992C345E3E1 /* Components */,
+				F2BA1529632CF0B05E335E94 /* LiveActivities */,
+				B0DC381A895A964B92A1B738 /* Theme */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F41F50DA1D4D4ECA298DC59 /* InvisalignTrackerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3438A050C38A8074892A379D /* Build configuration list for PBXNativeTarget "InvisalignTrackerWatch" */;
+			buildPhases = (
+				CF03F429BD868A0CDFC232B9 /* Sources */,
+				286BDB7BE94EC6BD34D1B49E /* Resources */,
+				3F57E0EE6A6282D85DDF2AB7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85B65E8087518CA50F6BE306 /* PBXTargetDependency */,
+			);
+			name = InvisalignTrackerWatch;
+			packageProductDependencies = (
+			);
+			productName = InvisalignTrackerWatch;
+			productReference = 35368F41C1898556673CBD36 /* InvisalignTrackerWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22503A538168B652D6731C8C /* InvisalignTrackerWatchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F72A82590F79A29562B49E /* Build configuration list for PBXNativeTarget "InvisalignTrackerWatchWidget" */;
+			buildPhases = (
+				63CBA1DED9EF0E7931FB98AA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvisalignTrackerWatchWidget;
+			packageProductDependencies = (
+			);
+			productName = InvisalignTrackerWatchWidget;
+			productReference = 9B0024796003517CC73787D9 /* InvisalignTrackerWatchWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2725514D222818998F06ABF0 /* InvisalignTrackerLiveActivities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94932AEBABE2D6B0B6FFEFCE /* Build configuration list for PBXNativeTarget "InvisalignTrackerLiveActivities" */;
+			buildPhases = (
+				8DE21A096FE05A786B486219 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvisalignTrackerLiveActivities;
+			packageProductDependencies = (
+			);
+			productName = InvisalignTrackerLiveActivities;
+			productReference = 75E7D7F9418E7F04A7AE0E1F /* InvisalignTrackerLiveActivities.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		61EDFB62AADEBD07B71586D3 /* InvisalignTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC83C44BF66B1686807536B4 /* Build configuration list for PBXNativeTarget "InvisalignTrackerTests" */;
+			buildPhases = (
+				A4CCC96CDD705A849E3D8A88 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A989ED2262DF7A602D127D7 /* PBXTargetDependency */,
+			);
+			name = InvisalignTrackerTests;
+			packageProductDependencies = (
+			);
+			productName = InvisalignTrackerTests;
+			productReference = 678457EF40DE70161AF9F589 /* InvisalignTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFE88223BAEC4AD59C4657E8 /* InvisalignTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959E97DFFF98E950BD4FD61B /* Build configuration list for PBXNativeTarget "InvisalignTracker" */;
+			buildPhases = (
+				5CF93C2B81CE0CC77B4E8A82 /* Sources */,
+				3336D546DF0B3BD8E0B39391 /* Resources */,
+				04F006DA2A062355CD24200B /* Embed Foundation Extensions */,
+				7674E0160DE25CAC5CB0C3E7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A61A937AFFE84257FD1581C /* PBXTargetDependency */,
+				22D378FC6087B64687B55A8D /* PBXTargetDependency */,
+			);
+			name = InvisalignTracker;
+			packageProductDependencies = (
+			);
+			productName = InvisalignTracker;
+			productReference = 571E64F5B1BEC9DF34770AD6 /* InvisalignTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4BE5D5D3DC63652D7E92D43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0F41F50DA1D4D4ECA298DC59 = {
+						ProvisioningStyle = Automatic;
+					};
+					22503A538168B652D6731C8C = {
+						ProvisioningStyle = Automatic;
+					};
+					2725514D222818998F06ABF0 = {
+						ProvisioningStyle = Automatic;
+					};
+					EFE88223BAEC4AD59C4657E8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD2A27B7EDB8F3464AA61E04 /* Build configuration list for PBXProject "InvisalignTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CD5FEEE4539AB7F0FD759441;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFE88223BAEC4AD59C4657E8 /* InvisalignTracker */,
+				2725514D222818998F06ABF0 /* InvisalignTrackerLiveActivities */,
+				61EDFB62AADEBD07B71586D3 /* InvisalignTrackerTests */,
+				0F41F50DA1D4D4ECA298DC59 /* InvisalignTrackerWatch */,
+				22503A538168B652D6731C8C /* InvisalignTrackerWatchWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		286BDB7BE94EC6BD34D1B49E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C725B3175DE5420EA6E1B9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3336D546DF0B3BD8E0B39391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4977D5606A498B4B50830D37 /* ASSETS_GUIDE.md in Resources */,
+				7BD334BEF1DC97571D9D1BFC /* Assets.xcassets in Resources */,
+				6F2C7CE3C7219BDBC07FEFE0 /* CALENDAR_DEBUG_FIX.md in Resources */,
+				91B9BDCB3D098B0FE81B187A /* CALENDAR_FIX_SUMMARY.md in Resources */,
+				881CF80644EB9E07B3F84100 /* CALENDAR_QA_CHECKLIST.md in Resources */,
+				AA4630A0C9F48037CC5929DF /* DEPLOYMENT_CHECKLIST.md in Resources */,
+				307DE4107E9AD57CB4928118 /* ICLOUD_SETUP_GUIDE.md in Resources */,
+				7DEA08C1B280BD1799DD8C2B /* IMPLEMENTATION_SUMMARY.md in Resources */,
+				0E4820E0241DF1CFAD464AA5 /* ONBOARDING_AUTOMATION_DOCS.md in Resources */,
+				4330C2EA231BF9938CABD3EE /* QUICK_START_CARD.md in Resources */,
+				F23EEDE7F4E3A2EF3B4269B0 /* REMINDER_NOTIFICATIONS_FEATURE.md in Resources */,
+				40C1DB14C6E4F768D1508FAC /* TIMER_QA_CHECKLIST.md in Resources */,
+				10B333A70F7E1C8FDAC1D284 /* TRAYS_QA_CHECKLIST.md in Resources */,
+				431E8301AB6E270CF4B071C3 /* WATCH_APP_README.md in Resources */,
+				D6D38238C607B285749315CF /* WATCH_SETUP_GUIDE.md in Resources */,
+				FE3262752ECDB23E7CB74F57 /* build_output.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CF93C2B81CE0CC77B4E8A82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0FB1A6FD02861D93F6E735 /* ActivityRing.swift in Sources */,
+				CF7F9EAC2CB339B5073E1561 /* AddTrayButton.swift in Sources */,
+				6FE2BE6146E4EE50328656B9 /* AlignerLiveActivityAttributes.swift in Sources */,
+				66CC19D178F03E3F0E03E479 /* AlignerLiveActivityManager.swift in Sources */,
+				4F1A9360646A988D88F0D626 /* AppContext.swift in Sources */,
+				4F3C0BD7079EADE7E3258FEF /* AppTheme.swift in Sources */,
+				580C4B3F06A270A80F02100A /* BottomActionDock.swift in Sources */,
+				E31946AA6D162312AD3E9DAF /* CalendarDayCell 2.swift in Sources */,
+				52E8F8AC977BB9A5CBA85289 /* CalendarDayCell.swift in Sources */,
+				33CB648DAD1D2E720DDFA4A6 /* CalendarMonthCard 2.swift in Sources */,
+				AF8C0DFCE4F5CBB15197EC82 /* CalendarMonthCard.swift in Sources */,
+				5017A5E363BF97C7FFDDAFDE /* CalendarView.swift in Sources */,
+				C34A28AECDFC154AA010E62F /* CalendarViewModel.swift in Sources */,
+				539F144B36A3C4431016FBFD /* CalendarVisualTokens 2.swift in Sources */,
+				2A229334D03648116C28FEF1 /* CalendarVisualTokens.swift in Sources */,
+				644353DB5591611F1CC9F469 /* CloudSyncMonitor.swift in Sources */,
+				73FFFBB8BA0A88924CA6EFA9 /* ComplianceMode.swift in Sources */,
+				BE3E7775A54846D8C84ADE1F /* DateService.swift in Sources */,
+				55EFBEDB1C03537BB9A5EB42 /* DayStatus.swift in Sources */,
+				963494B056426C3F691B7CE2 /* Formatters.swift in Sources */,
+				91BBFD7C723906B3EBB3876E /* GlassCard.swift in Sources */,
+				3F819B959D42FBCB3127A52A /* GradientCard.swift in Sources */,
+				209378ADC44CCB528BB88E39 /* HomeGlassCard.swift in Sources */,
+				0B06769FE45E49D4F15F7C27 /* HomeVisualTokens.swift in Sources */,
+				C01B9F5B5E52EA176A8DEEFF /* InvisalignTrackerApp.swift in Sources */,
+				F0C981F4087E84E8DF5AA6FB /* KPIStatTile.swift in Sources */,
+				743B02A13C4BA37BB0665D99 /* NotificationTimeHelper.swift in Sources */,
+				CD48156D768819AA93241036 /* OnboardingView.swift in Sources */,
+				70956A30D9319DC6939595C7 /* PrimaryToggleButton.swift in Sources */,
+				CBB83A41F5F8749C41ED408D /* ProgressRingView.swift in Sources */,
+				942F02B3328CED5FEBA12E17 /* ReminderNotificationManager.swift in Sources */,
+				90334E540984B96687B0B046 /* RemovalSession.swift in Sources */,
+				25C6C84CACAC48486BEB3529 /* RemovalSessionRecord.swift in Sources */,
+				A97FB36F399B54DE2B16F96C /* RingClusterView.swift in Sources */,
+				05A71687A842B92E9BB29256 /* RootTabView.swift in Sources */,
+				29E69A7C0D4D05A022986DC5 /* SelectedDayDetailCard 2.swift in Sources */,
+				05FCA153FF6504EBB0F6F1D3 /* SelectedDayDetailCard.swift in Sources */,
+				17FB77E0D1B8F0C7281B21A0 /* SessionHistoryCard.swift in Sources */,
+				F81D49EAF324ECE08EED7C2E /* SettingsComponents.swift in Sources */,
+				42742308D9AB7F6FDE3FF02B /* SettingsRecord.swift in Sources */,
+				D83289BCB2E716EDD3C3405E /* SettingsView.swift in Sources */,
+				BE5A4D7A6EEC5D1F04964C42 /* SettingsViewModel.swift in Sources */,
+				F41695CCD72D49E754275DD1 /* StatusPill.swift in Sources */,
+				C2EA88292F874DA0A45B4CFC /* SwiftDataTrackingRepository.swift in Sources */,
+				A287153E4E19FC6CDED1CDE8 /* TimerHeroCard.swift in Sources */,
+				0B01650BD19838E834510446 /* TimerPrimaryButton.swift in Sources */,
+				72BF4E3D32F8B54B09EBA44C /* TimerView.swift in Sources */,
+				0B9F655E5FD140CEFCEDE03B /* TimerViewModel.swift in Sources */,
+				19B43D61DE2B0217D9C5CF50 /* TimerVisualTokens.swift in Sources */,
+				A2AAC81887777EF1D6CBD069 /* TodayView.swift in Sources */,
+				98DA14533B8C277660B2286D /* TodayViewModel.swift in Sources */,
+				CF5B99210B8704F70E32DDB2 /* TrackerCalculator.swift in Sources */,
+				F72F0D29A6047BB4BBE6BBC3 /* TrackerSettings.swift in Sources */,
+				EFE91EA421F9992CCA48FDF5 /* TrackingRepository.swift in Sources */,
+				E155131D06C3286E488BFE35 /* TrackingStore.swift in Sources */,
+				1BA8F5E13B74565169C62D42 /* Tray.swift in Sources */,
+				A529A9070471B52045892309 /* TrayActionButton.swift in Sources */,
+				B2F5E4508C929A316DA581DE /* TrayGlassCard.swift in Sources */,
+				53443F38E178B65C97DD7AA2 /* TrayMetricRow.swift in Sources */,
+				8C70F8DF146CE211211AA33A /* TrayProgressBar.swift in Sources */,
+				B6D49A8839939B115B7FEA38 /* TrayRecord.swift in Sources */,
+				E497E40EF0DBF49E939B767C /* TrayStatusBadge.swift in Sources */,
+				CAC704337B4FF25EF17B8AD6 /* TraysComponents.swift in Sources */,
+				CE55EF5569B76EECF86FF005 /* TraysEmptyState.swift in Sources */,
+				4E7C6C0A1F646776BB38584F /* TraysView+Previews.swift in Sources */,
+				9A5371AF1987C25A22891D2E /* TraysView.swift in Sources */,
+				372E022ECC824222F58DBB45 /* TraysViewModel.swift in Sources */,
+				2B83E92B765CD64BB33064A4 /* TraysVisualTokens.swift in Sources */,
+				946C69D08669E69C64C04F08 /* WatchConnectivityManager_iOS.swift in Sources */,
+				5F4F6A04075CC8FC7CFF4157 /* WatchStatePayload.swift in Sources */,
+				7603992236D5FB83726B1938 /* WeekStripView.swift in Sources */,
+				A1F4D0CF3057E2410AFF23E3 /* iOS_Integration_Instructions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63CBA1DED9EF0E7931FB98AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B46CD7ED234E8DDFB2248E /* AlignerWidget.swift in Sources */,
+				99ED79D6CECB488BCE27EBE3 /* WidgetDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE21A096FE05A786B486219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B08D3CBB6D8A2FA068E81F1 /* AlignerLiveActivityAttributes.swift in Sources */,
+				6267FD048020BCB04571BFC5 /* AlignerLiveActivityWidget.swift in Sources */,
+				B28F149431A6A90E38F19182 /* AppTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CCC96CDD705A849E3D8A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D3275EF97EE18F98B68A51 /* TrackerCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF03F429BD868A0CDFC232B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E174F7EF93F0EDA4ED1B4403 /* ContentView.swift in Sources */,
+				54FDB23144799384DF12055F /* InvisalignTrackerWatchApp.swift in Sources */,
+				1EE9A158D7A6B8EB53A2F91C /* WatchAppStates.swift in Sources */,
+				9C826F23E06B0B5B4F4A9209 /* WatchConnectivityManager.swift in Sources */,
+				DD3094D18723A0B6B2B9E482 /* WatchStatePayload.swift in Sources */,
+				82EC1945107B8D866106A483 /* WatchTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A989ED2262DF7A602D127D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE88223BAEC4AD59C4657E8 /* InvisalignTracker */;
+			targetProxy = 43522FC2FF86E8C5F368ED94 /* PBXContainerItemProxy */;
+		};
+		1A61A937AFFE84257FD1581C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F41F50DA1D4D4ECA298DC59 /* InvisalignTrackerWatch */;
+			targetProxy = 69AAB1D2CCF1B6A85B976700 /* PBXContainerItemProxy */;
+		};
+		22D378FC6087B64687B55A8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2725514D222818998F06ABF0 /* InvisalignTrackerLiveActivities */;
+			targetProxy = 0914C629C8F95D512CA6066F /* PBXContainerItemProxy */;
+		};
+		85B65E8087518CA50F6BE306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22503A538168B652D6731C8C /* InvisalignTrackerWatchWidget */;
+			targetProxy = 6AF42B35505668F499B580E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03B437387C99DD2A0B2D536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InvisalignTrackerWatch/InvisalignTrackerWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7RK323K3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InvisalignTrackerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		0EE4C380FF022D73773D395F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		161063639D1A1C78C472B544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LiveActivitiesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.LiveActivities;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		359ACB9F46E12F1E03C3B9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = InvisalignTrackerWatchWidget/InvisalignTrackerWatchWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7RK323K3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InvisalignTrackerWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		5BA5F5DBBE719AE00E89A01D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7RK323K3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LiveActivitiesExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.LiveActivities;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845AF586449A04D634D26373 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/InvisalignTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85B3859DDEE596A4B077EB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/InvisalignTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AP7RK323K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B609D2C5B9B246A981C6D951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AP7RK323K3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvisalignTracker.app/InvisalignTracker";
+			};
+			name = Debug;
+		};
+		BC9BE898C975358EE4641CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = InvisalignTrackerWatchWidget/InvisalignTrackerWatchWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InvisalignTrackerWatchWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.watchkitapp.widget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		D9D6CB0A9A5F1B54BEE1B34E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvisalignTracker.app/InvisalignTracker";
+			};
+			name = Release;
+		};
+		EC5B97019370C8F68C131C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		FE7DCB9B3B0312FB094930FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InvisalignTrackerWatch/InvisalignTrackerWatch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = InvisalignTrackerWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.InvisalignTracker.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3438A050C38A8074892A379D /* Build configuration list for PBXNativeTarget "InvisalignTrackerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B437387C99DD2A0B2D536D /* Debug */,
+				FE7DCB9B3B0312FB094930FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		75F72A82590F79A29562B49E /* Build configuration list for PBXNativeTarget "InvisalignTrackerWatchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359ACB9F46E12F1E03C3B9D5 /* Debug */,
+				BC9BE898C975358EE4641CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		94932AEBABE2D6B0B6FFEFCE /* Build configuration list for PBXNativeTarget "InvisalignTrackerLiveActivities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA5F5DBBE719AE00E89A01D /* Debug */,
+				161063639D1A1C78C472B544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		959E97DFFF98E950BD4FD61B /* Build configuration list for PBXNativeTarget "InvisalignTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85B3859DDEE596A4B077EB63 /* Debug */,
+				845AF586449A04D634D26373 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DC83C44BF66B1686807536B4 /* Build configuration list for PBXNativeTarget "InvisalignTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B609D2C5B9B246A981C6D951 /* Debug */,
+				D9D6CB0A9A5F1B54BEE1B34E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD2A27B7EDB8F3464AA61E04 /* Build configuration list for PBXProject "InvisalignTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EE4C380FF022D73773D395F /* Debug */,
+				EC5B97019370C8F68C131C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4BE5D5D3DC63652D7E92D43 /* Project object */;
+}
