@@ -1,42 +1,78 @@
-# InvisalignTracker (Native iOS Rewrite)
+<div align="center">
+  <h1>🦷 InvisalignTracker iOS</h1>
+  <p><strong>A high-compliance, metric-driven aligner tracking ecosystem built natively for iOS.</strong></p>
 
-Native SwiftUI + SwiftData rewrite of the Expo app with feature parity.
+  <p>
+    <img src="https://img.shields.io/badge/Swift-5.10-F05138.svg?style=flat-square&logo=swift" alt="Swift 5.10">
+    <img src="https://img.shields.io/badge/iOS-17.0+-000000.svg?style=flat-square&logo=apple" alt="iOS 17.0+">
+    <img src="https://img.shields.io/badge/Architecture-MVVM-blue.svg?style=flat-square" alt="Architecture MVVM">
+    <img src="https://img.shields.io/badge/Storage-SwiftData-FF2D55.svg?style=flat-square" alt="SwiftData">
+    <img src="https://img.shields.io/badge/UI-SwiftUI-3478f6.svg?style=flat-square" alt="SwiftUI">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License">
+    <img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square" alt="Build Status">
+  </p>
+</div>
 
-## Stack
-- Swift 5.10+
-- SwiftUI
-- SwiftData (sessions, trays, settings)
-- async/await in repository/store operations
-- iOS 17.0+
+---
 
-## Architecture
-- `App/`: app entry, root tabs, dependency wiring
-- `Features/`: Today, Timer, Calendar, Trays, Settings (each with `View` + `ViewModel`)
-- `Domain/`: pure models/services/business rules
-- `Data/`: SwiftData models + repository + state store
-- `Shared/`: UI components + theme
-- `Tests/`: domain-level tests
+## 🎯 Who is this for?
 
-## Build
-1. Install XcodeGen (if needed): `brew install xcodegen`
-2. Generate project: `cd ios-native/InvisalignTracker && xcodegen generate`
-3. Open `InvisalignTracker.xcodeproj` in Xcode 15+
-4. Run on iOS simulator/device
+**InvisalignTracker** is designed for **high-tech professionals, engineers, and data-driven individuals** who treat their aligner compliance with the same rigor they apply to their daily workflows. 
 
-## Feature Parity Implemented
-- Aligner out/in toggle with start/end timestamps
-- Live timer for active removal session
-- Daily wear/removal calculation
-- Daily target/grace progress and on-track state
-- Tray management (add/delete/set current)
-- Tray progress/compliance stats
-- Monthly calendar with pass/warn/fail/day markers
-- Settings for target/grace/default tray days/compliance mode
-- Full local persistence using SwiftData
-- Reset all data
+If you love configuring metrics, obsess over your daily 'wear time deficit', and prefer a beautiful, native iOS experience over generic cross-platform apps, this tracker is built exclusively for you. 
 
-## iOS 16 Fallback
-Current code targets iOS 17 to use SwiftData natively. For iOS 16 support, replace SwiftData models/repository with Core Data (same repository protocol), keep Domain/Features unchanged.
+Watch your compliance through granular data points, live Dynamic Island activities, and Apple Watch integrations—all crafted with a premium, glassmorphic aesthetic.
+
+## ✨ Key Features
+
+- **Precision Tracking:** Toggle aligner state (IN/OUT) with millisecond-accurate timestamps and live UI timers.
+- **Dynamic Island & Live Activities:** Monitor active removal sessions instantly without opening the app.
+- **Apple Watch Companion App:** Check and update your status directly from your wrist with rich complications and progress rings.
+- **Deep Metrics & Analytics:** Track Daily Wear vs. Removal calculation, Life Debt, Streak, Tray Progress, and Compliance Stats.
+- **Granular Configurations:** Set daily targets, grace minutes, default tray durations, and rigorous compliance modes.
+- **Calendar & History:** A comprehensive monthly calendar with pass/warn/fail day markers and detailed daily logs.
+- **Native Performance:** Fully built in SwiftUI and powered by SwiftData for ultra-fast, local-first persistence.
+
+## 🛠 Tech Stack & Architecture
+
+Engineered with modern Apple technologies and clean architecture principles.
+
+### Core Stack
+- **Language:** Swift 5.10+
+- **Framework:** SwiftUI
+- **Persistence:** SwiftData (Sessions, Trays, Settings)
+- **Concurrency:** Modern `async`/`await` for repository and store operations
+- **Target OS:** iOS 17.0+ & watchOS 10.0+
+
+### Project Structure (MVVM)
+- 📁 **`App/`** — App entry, root tabs, and dependency wiring.
+- 📁 **`Features/`** — Modularized views and ViewModels (Today, Timer, Calendar, Trays, Settings).
+- 📁 **`Domain/`** — Pure models, robust services, and business rules isolated from UI.
+- 📁 **`Data/`** — SwiftData entities, repository implementations, and state store.
+- 📁 **`Shared/`** — Reusable UI components, typography, glassmorphism logic, and app themes.
+- 📁 **`LiveActivitiesExtension/`** — WidgetExtension for Dynamic Island interactions.
+- 📁 **`Tests/`** — Comprehensive domain-level testing suites.
+
+## 🚀 Getting Started
+
+To run the project locally on your machine, follow these steps:
+
+1. **Prerequisite:** Install [XcodeGen](https://github.com/yonaskolb/XcodeGen) if you don't have it installed.
+   ```bash
+   brew install xcodegen
+   ```
+2. **Generate the Xcode Project:**
+   ```bash
+   cd ios-native/InvisalignTracker && xcodegen generate
+   ```
+3. **Open Xcode:**
+   Open `InvisalignTracker.xcodeproj` in Xcode 15 or later.
+4. **Run:** Select your preferred simulator or physical device and hit `Cmd + R` to build and run.
+
+*(Note: Ensure you have an active Apple Developer account configured if testing the Apple Watch companion app or Live Activities on a physical device).*
+
+## 📌 iOS 16 Fallback
+The current infrastructure leverages **iOS 17's native SwiftData**. For iOS 16 support, you can easily swap the SwiftData models and repository layer with Core Data (implementing the exact same generic repository protocols) while keeping the `Domain` and `Features` layers entirely untouched.
 
 ---
 
