@@ -1,3 +1,9 @@
-node_modules
+
+ios/
+android/
+.rork
 .env
+rork-eslint.config.js
+core
+node_modules
 .expo
