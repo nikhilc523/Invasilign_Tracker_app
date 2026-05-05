@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InviSmile - Your Smile Journey, Beautifully Tracked</title>
+    <meta name="description" content="InviSmile is the premium Invisalign tracking app for iOS and Apple Watch. Track wear time, manage trays, and stay on top of your treatment with beautiful activity rings and smart reminders.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="app-icon.png" alt="InviSmile" width="28" height="28" style="border-radius:7px;">
+                <span>InviSmile</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#experience">Experience</a>
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#support">Support</a>
+            </div>
+            <a href="#download" class="nav-cta">Download</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-up">
+                <span class="badge-dot"></span>
+                Available on iOS & Apple Watch
+            </div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                Your smile journey,<br>
+                <span class="gradient-text">beautifully tracked.</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                The premium Invisalign companion that makes aligner tracking
+                effortless. Activity rings, smart reminders, and a design
+                you'll actually love using.
+            </p>
+            <div class="hero-ctas" data-animate="fade-up" data-delay="300">
+                <a href="#download" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M14.5 10.5C14.5 8.5 16 7.5 16 7.5C15 6 13.5 5.5 13 5.5C11.5 5.5 11 6.5 10 6.5C9 6.5 8.5 5.5 7 5.5C5.5 5.5 3.5 7 3.5 10.5C3.5 14 6 17 7.5 17C8.5 17 9 16.5 10 16.5C11 16.5 11.5 17 12.5 17C14 17 16.5 14 16.5 14C16.5 14 14.5 13 14.5 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 3.5C12.5 3 13 2 13 2C13 2 11.5 2 10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download on App Store
+                </a>
+                <a href="#features" class="btn btn-ghost">
+                    Explore Features
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 3V13M8 13L13 8M8 13L3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-bento-floating">
+            <!-- Card 1: Activity Rings -->
+            <div class="bento-card rings-card" data-animate="fade-up" data-delay="300">
+                <div class="rc-main-content">
+                    <div class="bc-rings-container">
+                        <svg viewBox="0 0 120 120" class="bc-rings glow-rings" fill="none">
+                            <circle cx="60" cy="60" r="48" class="bc-track bc-wear-track" fill="none"/>
+                            <circle cx="60" cy="60" r="48" class="bc-progress bc-wear" style="--progress: 0.88" fill="none"/>
+                            <circle cx="60" cy="60" r="34" class="bc-track bc-streak-track" fill="none"/>
+                            <circle cx="60" cy="60" r="34" class="bc-progress bc-streak" style="--progress: 0.7" fill="none"/>
+                            <circle cx="60" cy="60" r="20" class="bc-track bc-life-track" fill="none"/>
+                            <circle cx="60" cy="60" r="20" class="bc-progress bc-life" style="--progress: 0.65" fill="none"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="rc-stats-vertical">
+                        <div class="rcv-stat">
+                            <div class="rcv-lbl-row"><div class="rcv-dot dot-wear"></div><div class="rcv-lbl">Wear</div></div>
+                            <div class="rcv-val">20h 57m</div>
+                        </div>
+                        <div class="rcv-stat">
+                            <div class="rcv-lbl-row"><div class="rcv-dot dot-streak"></div><div class="rcv-lbl">Streak</div></div>
+                            <div class="rcv-val caramel">1 day</div>
+                        </div>
+                        <div class="rcv-stat">
+                            <div class="rcv-lbl-row"><div class="rcv-dot dot-life"></div><div class="rcv-lbl">Life</div></div>
+                            <div class="rcv-val terracotta">276h 57m</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rc-footer">
+                    <div class="rc-status-warning">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        <span>Behind Schedule</span>
+                    </div>
+                    <span class="bc-tray-info">Tray 4 &middot; Day 3</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Active Session -->
+            <div class="bento-card active-session-card" data-animate="fade-up" data-delay="400">
+                <div class="ios-preview-surface ios-preview-surface--hero">
+                    <div class="dynamic-island dynamic-island--hero" aria-hidden="true">
+                        <div class="dynamic-island__left">
+                            <div class="utensil-mark utensil-mark--island">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                    <path d="M7 2v20"></path>
+                                    <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dynamic-island__timer" data-live-counter-group="dynamic-island">2:11</div>
+                    </div>
+
+                    <div class="live-activity-card live-activity-card--hero" aria-hidden="true">
+                        <div class="live-activity-card__header">
+                            <div class="live-activity-card__identity">
+                                <div class="utensil-mark utensil-mark--card">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                        <path d="M7 2v20"></path>
+                                        <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                                    </svg>
+                                </div>
+                                <div class="live-activity-card__copy">
+                                    <div class="live-activity-card__title">Eating &amp; Drinking</div>
+                                    <div class="live-activity-card__subtitle">Removal Active</div>
+                                </div>
+                            </div>
+                            <div class="live-activity-card__close">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="live-activity-card__timer-pill">
+                            <span class="live-activity-card__dot"></span>
+                            <span class="live-activity-card__timer" data-live-counter-group="live-activity">2:34</span>
+                            <span class="live-activity-card__badge">LIVE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Stats Stack -->
+            <div class="stat-stack" data-animate="fade-up" data-delay="500">
+                <div class="bento-card mini-stat">
+                    <div class="ms-val oatmeal">20h 48m</div>
+                    <div class="ms-lbl">Worn today</div>
+                </div>
+                <div class="bento-card mini-stat">
+                    <div class="ms-val caramel">1h 6m</div>
+                    <div class="ms-lbl">Remaining</div>
+                </div>
+                <div class="bento-card mini-stat">
+                    <div class="ms-val white">19m</div>
+                    <div class="ms-lbl">Removed today</div>
+                </div>
+            </div>
+
+            <!-- Card 4: Analytics Chart -->
+            <div class="bento-card chart-card" data-animate="fade-up" data-delay="600">
+                <!-- TOP DATE BAR -->
+                <div class="calendar-top-bar">
+                    <div class="ct-date">Today, May 4, 2026</div>
+                    <button class="ct-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </button>
+                </div>
+
+                <!-- WEEK STRIP -->
+                <div class="calendar-week-strip">
+                    <div class="cws-day"><div class="cws-label">S</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="var(--oatmeal)" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="var(--oatmeal)"/></svg></div></div>
+                    <div class="cws-day active"><div class="cws-label">M</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="#685547"/></svg></div></div>
+                    <div class="cws-day"><div class="cws-label">T</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2" opacity="0.5"/><circle cx="12" cy="12" r="4" fill="#685547" opacity="0.5"/></svg></div></div>
+                    <div class="cws-day"><div class="cws-label">W</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2" opacity="0.5"/><circle cx="12" cy="12" r="4" fill="#685547" opacity="0.5"/></svg></div></div>
+                    <div class="cws-day"><div class="cws-label">T</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2" opacity="0.5"/><circle cx="12" cy="12" r="4" fill="#685547" opacity="0.5"/></svg></div></div>
+                    <div class="cws-day"><div class="cws-label">F</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2" opacity="0.5"/><circle cx="12" cy="12" r="4" fill="#685547" opacity="0.5"/></svg></div></div>
+                    <div class="cws-day"><div class="cws-label">S</div><div class="cws-ring"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#685547" stroke-width="2" opacity="0.5"/><circle cx="12" cy="12" r="4" fill="#685547" opacity="0.5"/></svg></div></div>
+                </div>
+
+                <!-- HERO RINGS -->
+                <div class="calendar-hero-rings">
+                    <svg viewBox="0 0 120 120" class="chr-svg" fill="none">
+                        <!-- Life Ring (Innermost) -->
+                        <circle cx="60" cy="60" r="16" stroke="rgba(255, 255, 255, 0.05)" stroke-width="12" fill="none"/>
+                        <circle cx="60" cy="60" r="16" stroke="var(--caramel)" stroke-width="12" stroke-dasharray="100" stroke-dashoffset="60" stroke-linecap="round" fill="none" transform="rotate(-90 60 60)"/>
+                        
+                        <!-- Streak Ring (Middle) -->
+                        <circle cx="60" cy="60" r="32" stroke="rgba(179, 102, 77, 0.15)" stroke-width="12" fill="none"/>
+                        <circle cx="60" cy="60" r="32" stroke="var(--terracotta)" stroke-width="12" stroke-dasharray="201" stroke-dashoffset="150" stroke-linecap="round" fill="none" transform="rotate(-90 60 60)"/>
+
+                        <!-- Wear Ring (Outermost) -->
+                        <circle cx="60" cy="60" r="48" stroke="rgba(227, 217, 199, 0.15)" stroke-width="12" fill="none"/>
+                        <circle cx="60" cy="60" r="48" stroke="var(--oatmeal)" stroke-width="12" stroke-dasharray="301" stroke-dashoffset="30" stroke-linecap="round" fill="none" transform="rotate(-90 60 60)"/>
+                    </svg>
+                </div>
+
+                <!-- WEAR SECTION -->
+                <div class="stat-section">
+                    <div class="stat-title">Wear</div>
+                    <div class="stat-value"><span class="val-main oatmeal">20:36</span><span class="val-sub oatmeal-dim">/22H</span></div>
+                    
+                    <div class="chart-area">
+                        <div class="chart-y-label">60 MIN</div>
+                        <div class="chart-dashed-line top"></div>
+                        <div class="chart-bars">
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 30%;"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                            <div class="c-bar wear-bar" style="height: 100%;"></div>
+                        </div>
+                        <div class="chart-x-axis">
+                            <span>12:00</span><span>6:00</span><span>12:00</span><span>6:00</span>
+                        </div>
+                        <div class="chart-total oatmeal-dim">TOTAL 20H 36M</div>
+                        <div class="chart-dashed-line bottom"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Removal Analytics -->
+            <div class="bento-card removal-chart-card" data-animate="fade-up" data-delay="700">
+                <!-- REMOVAL SECTION -->
+                <div class="stat-section">
+                    <div class="stat-title">Removal</div>
+                    <div class="stat-value"><span class="val-main terracotta">26MIN &bull; 5 sessions</span></div>
+                    
+                    <div class="chart-area">
+                        <div class="chart-y-label">23</div>
+                        <div class="chart-dashed-line top"></div>
+                        <div class="chart-bars">
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar removal-bar" style="height: 80%;"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar empty"></div>
+                            <div class="c-bar removal-bar" style="height: 15%;"></div>
+                            <div class="c-bar empty"></div>
+                        </div>
+                        <div class="chart-x-axis">
+                            <span>12:00</span><span>6:00</span><span>12:00</span><span>6:00</span>
+                        </div>
+                        <div class="chart-total terracotta">TOTAL 26M</div>
+                        <div class="chart-dashed-line bottom"></div>
+                    </div>
+                </div>
+
+                <!-- REMOVAL BREAKDOWN SECTION -->
+                <div class="calendar-removal-breakdown mt-24">
+                    <div class="crb-title">REMOVAL BREAKDOWN</div>
+                    
+                    <div class="crb-item">
+                        <div class="crb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg></div>
+                        <div class="crb-info">
+                            <div class="crb-name">Eating & Drinking</div>
+                            <div class="crb-meta">3x &bull; 13m</div>
+                        </div>
+                        <div class="crb-duration terracotta">13m</div>
+                    </div>
+
+                    <div class="crb-item">
+                        <div class="crb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M5 5l1.5 1.5"></path><path d="M17.5 17.5L19 19"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M5 19l1.5-1.5"></path><path d="M17.5 6.5L19 5"></path></svg></div>
+                        <div class="crb-info">
+                            <div class="crb-name">Cleaning Aligners</div>
+                            <div class="crb-meta">1x &bull; 13m</div>
+                        </div>
+                        <div class="crb-duration terracotta">13m</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+                <p class="section-desc">Designed with obsessive attention to detail, InviSmile gives you complete control over your aligner treatment in a stunning interface.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1: Activity Rings -->
+                <div class="feature-card feature-large" data-animate="fade-up">
+                    <div class="feature-visual">
+                        <div class="feature-ui-mockup rings-mockup">
+                            <div class="bc-rings-container">
+                                <svg viewBox="0 0 120 120" class="bc-rings" fill="none">
+                                    <circle cx="60" cy="60" r="48" class="bc-track bc-wear-track" fill="none"/>
+                                    <circle cx="60" cy="60" r="48" class="bc-progress bc-wear" style="--progress: 0.92;" fill="none"/>
+                                    <circle cx="60" cy="60" r="36" class="bc-track bc-streak-track" fill="none"/>
+                                    <circle cx="60" cy="60" r="36" class="bc-progress bc-streak" style="--progress: 0.78;" fill="none"/>
+                                    <circle cx="60" cy="60" r="24" class="bc-track bc-life-track" fill="none"/>
+                                    <circle cx="60" cy="60" r="24" class="bc-progress bc-life" style="--progress: 0.65;" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="bc-stats-grid">
+                                <div class="bc-stat">
+                                    <span class="bcs-val" style="color: var(--oatmeal)">21h 14m</span>
+                                    <span class="bcs-lbl">Wear</span>
+                                </div>
+                                <div class="bc-stat">
+                                    <span class="bcs-val" style="color: var(--caramel)">14 days</span>
+                                    <span class="bcs-lbl">Streak</span>
+                                </div>
+                                <div class="bc-stat">
+                                    <span class="bcs-val" style="color: var(--terracotta)">316h</span>
+                                    <span class="bcs-lbl">Life</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Activity Rings</h3>
+                        <p>Three concentric rings track your wear time, streak consistency, and overall treatment life. Inspired by Apple Fitness, designed for your smile.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Smart Timer -->
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-ui-mockup timer-mockup">
+                        <div class="tm-pill">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                <path d="M7 2v20"></path>
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                            </svg>
+                            <span>Eating & Drinking</span>
+                        </div>
+
+                        <div class="timer-ring-container">
+                            <svg viewBox="0 0 100 100" class="timer-ring">
+                                <circle cx="50" cy="50" r="46" class="tr-track"/>
+                                <circle cx="50" cy="50" r="46" class="tr-progress" style="--progress: 0.25;"/>
+                            </svg>
+                            <div class="timer-center-info">
+                                <div class="tm-time" data-live-counter-group="feature-timer">0:12</div>
+                                <div class="tm-label">current session</div>
+                            </div>
+                        </div>
+
+                        <div class="tm-stats">
+                            <div class="tm-stat">
+                                <span class="tms-val">6</span>
+                                <span class="tms-lbl">Sessions</span>
+                            </div>
+                            <div class="tm-stat border-sides">
+                                <span class="tms-val">21m</span>
+                                <span class="tms-lbl">Total Out</span>
+                            </div>
+                            <div class="tm-stat">
+                                <span class="tms-val">37m</span>
+                                <span class="tms-lbl">Remaining</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Smart Timer</h3>
+                    <p>One tap to track removal sessions. Categorize by reason — eating, brushing, cleaning, or dental visits. Live Activities keep you aware.</p>
+                </div>
+
+                <!-- Feature 3: Calendar View -->
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-ui-mockup week-mockup">
+                        <div class="week-strip">
+                            <div class="ws-day"><span class="ws-lbl">M</span><span class="ws-dot pass"></span></div>
+                            <div class="ws-day"><span class="ws-lbl">T</span><span class="ws-dot pass"></span></div>
+                            <div class="ws-day"><span class="ws-lbl">W</span><span class="ws-dot pass"></span></div>
+                            <div class="ws-day active"><span class="ws-lbl">T</span><span class="ws-dot warn"></span></div>
+                            <div class="ws-day"><span class="ws-lbl">F</span><span class="ws-dot empty"></span></div>
+                            <div class="ws-day"><span class="ws-lbl">S</span><span class="ws-dot empty"></span></div>
+                            <div class="ws-day"><span class="ws-lbl">S</span><span class="ws-dot empty"></span></div>
+                        </div>
+                    </div>
+                    <h3>Compliance Calendar</h3>
+                    <p>Monthly view with color-coded compliance. Green for goals met, amber for close calls. Tap any day to see detailed session logs.</p>
+                </div>
+
+                <!-- Feature 4: Tray Management -->
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-ui-mockup tray-mockup">
+                        <div class="tm-header">
+                            <span class="tm-title">Tray 8</span>
+                            <span class="tm-day">DAY <span class="amber">12</span><span class="amber-dim">/14</span></span>
+                        </div>
+                        <div class="tm-bar-container">
+                            <div class="tm-bar-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <h3>Tray Management</h3>
+                    <p>Beautiful stacked carousel of all your trays. Track progress per tray, see days remaining, and know exactly where you are in treatment.</p>
+                </div>
+
+                <!-- Feature 5: Smart Reminders -->
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-ui-mockup notification-mockup">
+                        <div class="notif-bubble">
+                            <div class="notif-header">
+                                <div class="notif-icon"></div>
+                                <span class="notif-app">InviSmile</span>
+                                <span class="notif-time">now</span>
+                            </div>
+                            <div class="notif-body">
+                                <span class="notif-title">Aligners Out</span>
+                                <span class="notif-text">It's time to put your aligners back in.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Smart Reminders</h3>
+                    <p>Configurable notifications that nudge you to put aligners back in. Set intervals from 1 to 60 minutes with grace periods.</p>
+                </div>
+
+                <!-- Feature 6: Cloud Sync -->
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-ui-mockup sync-mockup">
+                        <div class="sync-pill">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Synced just now</span>
+                        </div>
+                    </div>
+                    <h3>iCloud Sync</h3>
+                    <p>Your data syncs seamlessly across all your Apple devices via iCloud. Private, secure, and always up to date.</p>
+                </div>
+                <!-- Feature 7: Monthly Tracking -->
+                <div class="feature-card" data-animate="fade-up" data-delay="400">
+                    <div class="feature-ui-mockup month-mockup">
+                        <div class="month-grid">
+                            <div class="mg-day">
+                                <span class="mg-date">12</span>
+                                <div class="mg-rings">
+                                    <div class="mg-ring wear"></div>
+                                    <div class="mg-ring streak"></div>
+                                    <div class="mg-ring life"></div>
+                                    <div class="mg-dot pass"></div>
+                                </div>
+                            </div>
+                            <div class="mg-day">
+                                <span class="mg-date">13</span>
+                                <div class="mg-rings">
+                                    <div class="mg-ring wear" style="border-right-color: transparent"></div>
+                                    <div class="mg-ring streak"></div>
+                                    <div class="mg-dot warn"></div>
+                                </div>
+                            </div>
+                            <div class="mg-day today">
+                                <span class="mg-date">14</span>
+                                <div class="mg-rings">
+                                    <div class="mg-ring wear" style="border-bottom-color: transparent"></div>
+                                </div>
+                            </div>
+                            <div class="mg-day future">
+                                <span class="mg-date">15</span>
+                                <div class="mg-rings"></div>
+                            </div>
+                            <div class="mg-day future">
+                                <span class="mg-date">16</span>
+                                <div class="mg-rings"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Monthly History</h3>
+                    <p>View your entire treatment history at a glance. Every day displays mini activity rings and compliance status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Crafted with<br>obsessive detail.</h2>
+                <p class="section-desc">Every pixel, every animation, every interaction has been carefully considered to create an experience worthy of your daily routine.</p>
+            </div>
+
+            <div class="experience-showcase">
+                <div class="showcase-item" data-animate="fade-up">
+                    <div class="showcase-visual">
+                        <div class="glass-card">
+                            <div class="glass-inner">
+                                <div class="timer-demo">
+                                    <div class="timer-ring-outer">
+                                        <svg viewBox="0 0 120 120">
+                                            <circle cx="60" cy="60" r="52" class="timer-track"/>
+                                            <circle cx="60" cy="60" r="52" class="timer-progress"/>
+                                        </svg>
+                                        <div class="timer-time">02:34</div>
+                                    </div>
+                                    <div class="timer-label">Aligners Out - Eating</div>
+                                    <div class="timer-pills">
+                                        <span class="timer-pill active">Eating</span>
+                                        <span class="timer-pill">Brushing</span>
+                                        <span class="timer-pill">Cleaning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>Effortless Tracking</h3>
+                        <p>Start a removal session with a single tap. The timer runs in the background with Live Activities on your lock screen, so you never forget to put your aligners back in.</p>
+                    </div>
+                </div>
+
+                <div class="showcase-item reverse" data-animate="fade-up">
+                    <div class="showcase-visual">
+                        <div class="glass-card">
+                            <div class="glass-inner">
+                                <div class="streak-demo">
+                                    <div class="streak-number">14</div>
+                                    <div class="streak-label">Day Streak</div>
+                                    <div class="streak-dots">
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                        <span class="dot filled"></span>
+                                    </div>
+                                    <div class="streak-bar">
+                                        <div class="streak-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>Build Consistency</h3>
+                        <p>Watch your streak grow day by day. The visual feedback of filling rings and extending streaks creates a satisfying loop that keeps you motivated throughout your entire treatment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section class="ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Ecosystem</span>
+                <h2 class="section-title">Works everywhere<br>you do.</h2>
+                <p class="section-desc">From your wrist to your home screen, InviSmile keeps your treatment visible and accessible.</p>
+            </div>
+
+            <!-- Apple Watch -->
+            <div class="eco-section eco-section--watch" data-animate="fade-up">
+                <div class="eco-text">
+                    <h3>Apple Watch</h3>
+                    <p>Full companion app with complications. Track sessions, view progress, and manage your aligners — all from your wrist.</p>
+                </div>
+                <div class="eco-devices eco-devices--watch">
+                    <div class="watch-studio watch-studio--apple" aria-hidden="true">
+                        <div class="watch-studio__eyebrow">Apple Watch Companion</div>
+                        <div class="watch-studio__cluster">
+                            <div class="watch-rig watch-rig--left">
+                                <div class="watch-render watch-render--side watch-render--starlight watch-render--band-cream">
+                                    <div class="watch-render__strap watch-render__strap--top"></div>
+                                    <div class="watch-render__shell">
+                                        <span class="watch-render__button"></span>
+                                        <span class="watch-render__crown"></span>
+                                        <div class="watch-render__bezel">
+                                            <div class="watch-screen watch-screen--mocha-session">
+                                                <div class="watch-session__header">
+                                                    <img class="watch-mocha__icon watch-mocha__icon--small" src="app-icon.png" alt="">
+                                                    <span class="watch-session__clock">2:34</span>
+                                                </div>
+                                                <div class="watch-session__body">
+                                                    <div class="watch-session__timer" data-live-counter-group="watch-session">26:30</div>
+                                                    <div class="watch-session__reason">Eating &amp; Drinking</div>
+                                                </div>
+                                                <div class="watch-session__footer">
+                                                    <span>Removal Active</span>
+                                                    <span class="watch-session__pill">OUT</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="watch-render__strap watch-render__strap--bottom"></div>
+                                </div>
+                            </div>
+
+                            <div class="watch-rig watch-rig--hero">
+                                <div class="watch-render watch-render--hero watch-render--silver watch-render--band-lilac">
+                                    <div class="watch-render__strap watch-render__strap--top"></div>
+                                    <div class="watch-render__shell">
+                                        <span class="watch-render__button"></span>
+                                        <span class="watch-render__crown"></span>
+                                        <div class="watch-render__bezel">
+                                            <div class="watch-screen watch-screen--mocha-rings">
+                                                <div class="watch-mocha__top-row">
+                                                    <div class="watch-mocha__app">
+                                                        <img class="watch-mocha__icon" src="app-icon.png" alt="">
+                                                        <span>InviSmile</span>
+                                                    </div>
+                                                    <span class="watch-mocha__badge">IN</span>
+                                                </div>
+                                                <div class="watch-mocha-rings__cluster">
+                                                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                                                        <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(227,217,199,0.14)" stroke-width="8"/>
+                                                        <circle cx="50" cy="50" r="38" fill="none" stroke="#EDE3CF" stroke-width="8" stroke-linecap="round" stroke-dasharray="239" stroke-dashoffset="26" transform="rotate(-90 50 50)"/>
+                                                        <circle cx="50" cy="50" r="28" fill="none" stroke="rgba(209,166,122,0.12)" stroke-width="8"/>
+                                                        <circle cx="50" cy="50" r="28" fill="none" stroke="#D6B178" stroke-width="8" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="40" transform="rotate(-90 50 50)"/>
+                                                        <circle cx="50" cy="50" r="18" fill="none" stroke="rgba(179,102,77,0.12)" stroke-width="8"/>
+                                                        <circle cx="50" cy="50" r="18" fill="none" stroke="#C97B59" stroke-width="8" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="32" transform="rotate(-90 50 50)"/>
+                                                    </svg>
+                                                    <div class="watch-mocha-rings__center">19h 53m</div>
+                                                </div>
+                                                <div class="watch-mocha-rings__tray">Tray 1 &middot; Day 12</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="watch-render__strap watch-render__strap--bottom"></div>
+                                </div>
+                            </div>
+
+                            <div class="watch-rig watch-rig--right">
+                                <div class="watch-render watch-render--side watch-render--champagne watch-render--band-coral">
+                                    <div class="watch-render__strap watch-render__strap--top"></div>
+                                    <div class="watch-render__shell">
+                                        <span class="watch-render__button"></span>
+                                        <span class="watch-render__crown"></span>
+                                        <div class="watch-render__bezel">
+                                            <div class="watch-screen watch-screen--mocha-summary">
+                                                <div class="watch-mocha__top-row watch-mocha__top-row--summary">
+                                                    <div class="watch-mocha__app">
+                                                        <img class="watch-mocha__icon watch-mocha__icon--small" src="app-icon.png" alt="">
+                                                        <span>Summary</span>
+                                                    </div>
+                                                </div>
+                                                <div class="watch-mocha-summary__rows">
+                                                    <div class="watch-mocha-summary__row">
+                                                        <span class="watch-mocha-summary__dot watch-mocha-summary__dot--wear"></span>
+                                                        <span class="watch-mocha-summary__label">Wear</span>
+                                                        <span class="watch-mocha-summary__value">21h 14m</span>
+                                                    </div>
+                                                    <div class="watch-mocha-summary__row">
+                                                        <span class="watch-mocha-summary__dot watch-mocha-summary__dot--streak"></span>
+                                                        <span class="watch-mocha-summary__label">Streak</span>
+                                                        <span class="watch-mocha-summary__value">14 days</span>
+                                                    </div>
+                                                    <div class="watch-mocha-summary__row">
+                                                        <span class="watch-mocha-summary__dot watch-mocha-summary__dot--tray"></span>
+                                                        <span class="watch-mocha-summary__label">Tray 8</span>
+                                                        <span class="watch-mocha-summary__value">Day 12</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="watch-render__strap watch-render__strap--bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Widgets -->
+            <div class="eco-section reverse" data-animate="fade-up">
+                <div class="eco-text">
+                    <h3>Home Screen Widgets</h3>
+                    <p>Small, medium, and large widgets keep your treatment front and center. See wear time, tray progress, and streaks without opening the app.</p>
+                </div>
+                <div class="eco-devices">
+                    <div class="widgets-showcase">
+                        <!-- Small widget -->
+                        <div class="hw hw-small">
+                            <div class="hw-ring-wrap">
+                                <svg viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="20" fill="none" stroke="rgba(209,166,122,0.2)" stroke-width="5"/>
+                                    <circle cx="24" cy="24" r="20" fill="none" stroke="#D1A67A" stroke-width="5" stroke-linecap="round"
+                                        stroke-dasharray="126" stroke-dashoffset="10" transform="rotate(-90 24 24)"/>
+                                </svg>
+                                <span class="hw-pct">92%</span>
+                            </div>
+                        </div>
+                        <!-- Medium widget -->
+                        <div class="hw hw-medium">
+                            <div class="hw-med-left">
+                                <svg viewBox="0 0 56 56" class="hw-med-ring">
+                                    <circle cx="28" cy="28" r="22" fill="none" stroke="rgba(209,166,122,0.2)" stroke-width="5"/>
+                                    <circle cx="28" cy="28" r="22" fill="none" stroke="#E3D9C6" stroke-width="5" stroke-linecap="round"
+                                        stroke-dasharray="138" stroke-dashoffset="11" transform="rotate(-90 28 28)"/>
+                                    <circle cx="28" cy="28" r="16" fill="none" stroke="rgba(209,166,122,0.2)" stroke-width="5"/>
+                                    <circle cx="28" cy="28" r="16" fill="none" stroke="#D1A67A" stroke-width="5" stroke-linecap="round"
+                                        stroke-dasharray="101" stroke-dashoffset="30" transform="rotate(-90 28 28)"/>
+                                </svg>
+                            </div>
+                            <div class="hw-med-right">
+                                <span class="hw-med-title">InviSmile</span>
+                                <span class="hw-med-val">21h 14m</span>
+                                <span class="hw-med-sub">Tray 8 - Day 12</span>
+                                <div class="hw-med-bar"><div class="hw-med-fill"></div></div>
+                            </div>
+                        </div>
+                        <!-- Large widget -->
+                        <div class="hw hw-large">
+                            <div class="hw-lg-header">
+                                <span class="hw-lg-title">InviSmile</span>
+                                <span class="hw-lg-status">On Track</span>
+                            </div>
+                            <div class="hw-lg-body">
+                                <div class="hw-lg-ring-wrap">
+                                    <svg viewBox="0 0 80 80">
+                                        <circle cx="40" cy="40" r="32" fill="none" stroke="rgba(209,166,122,0.15)" stroke-width="7"/>
+                                        <circle cx="40" cy="40" r="32" fill="none" stroke="#E3D9C6" stroke-width="7" stroke-linecap="round"
+                                            stroke-dasharray="201" stroke-dashoffset="16" transform="rotate(-90 40 40)"/>
+                                        <circle cx="40" cy="40" r="23" fill="none" stroke="rgba(209,166,122,0.15)" stroke-width="7"/>
+                                        <circle cx="40" cy="40" r="23" fill="none" stroke="#D1A67A" stroke-width="7" stroke-linecap="round"
+                                            stroke-dasharray="145" stroke-dashoffset="36" transform="rotate(-90 40 40)"/>
+                                        <circle cx="40" cy="40" r="14" fill="none" stroke="rgba(209,166,122,0.15)" stroke-width="7"/>
+                                        <circle cx="40" cy="40" r="14" fill="none" stroke="#B3664C" stroke-width="7" stroke-linecap="round"
+                                            stroke-dasharray="88" stroke-dashoffset="35" transform="rotate(-90 40 40)"/>
+                                    </svg>
+                                </div>
+                                <div class="hw-lg-stats">
+                                    <div class="hw-lg-stat"><span class="hw-lg-sval">21h 14m</span><span class="hw-lg-slbl">Wear</span></div>
+                                    <div class="hw-lg-stat"><span class="hw-lg-sval">14 days</span><span class="hw-lg-slbl">Streak</span></div>
+                                    <div class="hw-lg-stat"><span class="hw-lg-sval">Tray 8</span><span class="hw-lg-slbl">Current</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Activities -->
+            <div class="eco-section" data-animate="fade-up">
+                <div class="eco-text">
+                    <h3>Live Activities</h3>
+                    <p>Your active timer appears on the lock screen and Dynamic Island. Always visible, never forgotten. Tap to jump right back into the app.</p>
+                </div>
+                <div class="eco-devices">
+                    <div class="la-showcase">
+                        <div class="ios-preview-surface ios-preview-surface--island" aria-hidden="true">
+                            <div class="dynamic-island">
+                                <div class="dynamic-island__left">
+                                    <div class="utensil-mark utensil-mark--island">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                            <path d="M7 2v20"></path>
+                                            <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dynamic-island__timer" data-live-counter-group="dynamic-island">2:11</div>
+                            </div>
+                        </div>
+
+                        <div class="ios-preview-surface ios-preview-surface--live" aria-hidden="true">
+                            <div class="live-activity-card">
+                                <div class="live-activity-card__header">
+                                    <div class="live-activity-card__identity">
+                                        <div class="utensil-mark utensil-mark--card">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                                <path d="M7 2v20"></path>
+                                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="live-activity-card__copy">
+                                            <div class="live-activity-card__title">Eating &amp; Drinking</div>
+                                            <div class="live-activity-card__subtitle">Removal Active</div>
+                                        </div>
+                                    </div>
+                                    <div class="live-activity-card__close">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="live-activity-card__timer-pill">
+                                    <span class="live-activity-card__dot"></span>
+                                    <span class="live-activity-card__timer" data-live-counter-group="live-activity">2:34</span>
+                                    <span class="live-activity-card__badge">LIVE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy" data-animate="fade-up">
+        <div class="container">
+            <div class="privacy-card">
+                <div class="privacy-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 4L6 12V22C6 34 14 42 24 44C34 42 42 34 42 22V12L24 4Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 24L22 29L31 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2>Your data stays yours.</h2>
+                <p>InviSmile stores all data locally on your device and syncs privately via iCloud. We never collect, sell, or share your health data. No accounts required. No tracking. Just your data, on your devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content" data-animate="fade-up">
+                <h2 class="download-title">Start your smile<br>journey today.</h2>
+                <p class="download-desc">Free to download. No subscription required. Available for iPhone and Apple Watch.</p>
+                <a href="#" class="app-store-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.81 11.78 5.72 12.57 5.72C13.36 5.72 14.84 4.62 16.39 4.8C17.05 4.83 18.87 5.06 20.05 6.76C19.93 6.83 17.54 8.22 17.56 11.1C17.59 14.56 20.54 15.68 20.57 15.69C20.54 15.77 20.11 17.26 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                    </svg>
+                    <div>
+                        <span class="badge-small">Download on the</span>
+                        <span class="badge-large">App Store</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support" id="support">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Support</span>
+                <h2 class="section-title">We're here to help.</h2>
+            </div>
+
+            <div class="support-grid" data-animate="fade-up">
+                <div class="support-card">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li>Download InviSmile from the App Store</li>
+                        <li>Complete the onboarding flow with your treatment details</li>
+                        <li>Set your daily wear time goal (recommended: 22 hours)</li>
+                        <li>Configure reminder intervals</li>
+                        <li>Start tracking with a tap</li>
+                    </ul>
+                </div>
+
+                <div class="support-card">
+                    <h3>Frequently Asked Questions</h3>
+                    <details>
+                        <summary>How does wear time tracking work?</summary>
+                        <p>InviSmile calculates your daily wear time by subtracting the time your aligners are out (removal sessions) from 24 hours. Simply tap the timer when you remove your aligners and tap again when you put them back in.</p>
+                    </details>
+                    <details>
+                        <summary>Is my data private?</summary>
+                        <p>Absolutely. All data is stored locally on your device and synced privately via your personal iCloud account. We have zero access to your data and don't collect any analytics or personal information.</p>
+                    </details>
+                    <details>
+                        <summary>Does it work with Apple Watch?</summary>
+                        <p>Yes! InviSmile includes a full Apple Watch companion app with complications, allowing you to track sessions and view progress directly from your wrist.</p>
+                    </details>
+                    <details>
+                        <summary>What are the activity rings?</summary>
+                        <p>Inspired by Apple Fitness, our three rings represent: Wear (daily wear time goal), Streak (consecutive days meeting your goal), and Life (overall treatment compliance). Fill all three to stay on track!</p>
+                    </details>
+                    <details>
+                        <summary>Can I change my wear time goal?</summary>
+                        <p>Yes, go to Settings and adjust your daily wear target between 18-24 hours. You can also configure grace minutes and compliance mode to match your orthodontist's recommendations.</p>
+                    </details>
+                    <details>
+                        <summary>How do I switch to a new tray?</summary>
+                        <p>Navigate to the Trays tab and tap the add button to register your new tray. The app will automatically track your progress for each tray based on the days-per-tray setting.</p>
+                    </details>
+                </div>
+
+                <div class="support-card">
+                    <h3>Contact Us</h3>
+                    <p>Need help with something not covered above? We'd love to hear from you.</p>
+                    <a href="mailto:nikhilchowdary523@gmail.com" class="support-email">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M2 6L10 11L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        nikhilchowdary523@gmail.com
+                    </a>
+                    <p class="support-note">We typically respond within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="app-icon.png" alt="InviSmile" width="24" height="24" style="border-radius:6px;">
+                    <span>InviSmile</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#support">Support</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+                <p class="footer-copy">&copy; 2025 InviSmile. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
